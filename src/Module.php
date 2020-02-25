@@ -21,6 +21,9 @@ class Module
     {
         return [
             'factories' => [
+                LogService\Throwable::class => function ($sm) {
+                    return new LogService\Throwable();
+                },
             ],
         ];
     }
