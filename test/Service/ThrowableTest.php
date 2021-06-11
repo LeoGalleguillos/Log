@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class ThrowableTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->throwableService = new LogService\Throwable();
     }
